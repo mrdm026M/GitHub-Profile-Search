@@ -1,0 +1,307 @@
+:root {
+  /* colors */
+  --bg-color: #f1faeeff;
+  --heading-color: #1d3557ff;
+  --underline-color: #e63946ff;
+
+  /* fonts */
+  --heading-text: "Montserrat", sans sherif;
+  --para-text: "Open Sans", sans sherif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: var(--para-text);
+}
+
+h1 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-container {
+  height: 200vh;
+  width: 100%;
+  background-color: var(--bg-color);
+}
+
+/* navbar */
+.git-navbar {
+  height: 80px;
+  box-shadow: 0px 10px 20px 5px rgba(200, 200, 200, 0.135);
+  -webkit-box-shadow: 0px 10px 20px 5px rgba(200, 200, 200, 0.135);
+  -moz-box-shadow: 0px 10px 20px 5px rgba(200, 200, 200, 0.135);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.git-navbar .git-nav-heading {
+  border: 2.5px solid var(--underline-color);
+  padding: 8px;
+}
+
+.git-navbar .git-nav-heading span {
+  color: var(--heading-color);
+  font-family: var(--heading-text);
+  font-size: 30px;
+  font-weight: 550;
+  letter-spacing: 0.05rem;
+}
+
+/* search box */
+.git-main .git-main-box {
+  margin: 30px auto 20px auto;
+  background-color: white;
+  box-shadow: 0 0 20px 5px rgb(0, 0, 0, 0.1);
+  width: 80%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.git-main .git-main-box .git-heading {
+  text-align: center;
+}
+
+.git-main-box .git-heading .git-text {
+  font-size: 30px;
+  font-family: var(--heading-text);
+  font-weight: 550;
+  letter-spacing: 0.05rem;
+  color: var(--heading-color);
+}
+
+.git-main-box .git-heading hr {
+  width: 100px;
+  margin: 5px auto;
+  border: none;
+  height: 4px;
+  background-color: var(--underline-color);
+  border-radius: 50px;
+}
+
+.git-main-box .git-heading .git-para {
+  margin: 20px 200px 0 200px;
+  font-size: 12.5px;
+  font-family: var(--para-text);
+  font-weight: 500;
+  color: var(--heading-color);
+  opacity: 0.45;
+}
+
+#git-search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.git-main-box .git-search {
+  width: 80%;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#git-search-form .git-search .git-search-input {
+  width: 400px;
+  height: 40px;
+  padding: 2px 0px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--heading-color);
+  border: none;
+  border-bottom: 2.5px solid var(--underline-color);
+  outline: none;
+  padding-left: 10px;
+}
+
+#git-search-form .git-search .git-search-input::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--heading-color);
+  opacity: 0.25;
+}
+
+#git-search-form .git-search button {
+  cursor: pointer;
+  background-color: white;
+  color: var(--heading-color);
+  border: 2px solid var(--underline-color);
+  width: 150px;
+  font-size: 16px;
+  font-weight: 550;
+  letter-spacing: 0.05rem;
+  height: 40px;
+  margin-left: 5px;
+  outline: none;
+}
+
+#git-search-form .git-search button:hover {
+  background-color: var(--underline-color);
+  color: white;
+  outline: none;
+}
+
+.git-main #git-main-data {
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 0 20px 5px rgb(0, 0, 0, 0.1);
+  width: 80%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.git-main #git-main-data .git-info {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+}
+
+#git-main-data .git-info .user-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 350px;
+  padding: 50px;
+}
+
+.git-info .user-img img {
+  border-radius: 50%;
+  height: 225px;
+  width: 225px;
+}
+
+#git-main-data .git-info .user-data {
+  padding-right: 20px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.user-data .user-data-head span {
+  font-family: var(--heading-text);
+  font-size: 35px;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+.user-data .user-data-head hr {
+  width: 100px;
+  margin: 5px 0 7.5px 0;
+  border: none;
+  height: 3.75px;
+  background-color: var(--underline-color);
+  border-radius: 50px;
+}
+
+.user-data .user-data-head p {
+  font-size: 16px;
+  font-family: var(--para-text);
+  font-weight: 400;
+  word-spacing: 0.2rem;
+  color: var(--heading-color);
+  opacity: 0.75;
+  margin-top: 20px;
+}
+
+.user-data .user-data-2 .user-info {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 10px 20px;
+}
+
+.user-data-2 .user-info li {
+  margin: 0px 15px 15px 0;
+}
+
+.user-data-2 .user-info strong {
+  font-size: 20px;
+  font-family: var(--heading-text);
+  font-weight: 600;
+  color: var(--heading-color);
+  letter-spacing: 0.1rem;
+}
+
+.user-data-2 .user-info span {
+  font-size: 20px;
+  font-family: var(--para-text);
+  font-weight: 600;
+  color: var(--underline-color);
+  letter-spacing: 0.1rem;
+}
+
+.git-repos {
+  width: 100%;
+  height: 62.5vh;
+  /* border: 2px solid red; */
+}
+
+.git-repos .repo-table {
+  margin: 20px auto 20px auto;
+  /* border: 2px solid blue; */
+  background-color: white;
+  box-shadow: 0 0 20px 5px rgb(0, 0, 0, 0.1);
+  width: 80%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 40px 40px 40px;
+  overflow: scroll;
+}
+
+.git-repos .repo-table .git-table {
+  /* border: 2px solid red; */
+  text-align: center;
+}
+
+.repo-table .git-table .table-info th {
+  border: 2px solid black;
+  font-size: 20px;
+  color: var(--heading-color);
+  font-family: var(--heading-text);
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  padding: 10px 0;
+}
+
+.git-table #table-body tr td {
+  padding: 10px 0;
+  font-size: 15px;
+  font-family: var(--para-text);
+  color: var(--underline-color);
+  font-weight: 550;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  letter-spacing: 0.05rem;
+  flex-wrap: wrap;
+}

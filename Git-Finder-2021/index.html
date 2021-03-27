@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Git-Finder-2021</title>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="container">
+            <nav class="git-navbar">
+                <div class="git-nav-heading">
+                    <span>Git-Finder-2021</span>
+                </div>
+            </nav>
+            <!-- search box -->
+            <section class="git-main">
+                <div class="git-main-box">
+                    <div class="git-heading">
+                        <span class="git-text">Search GitHub Users</span>
+                        <hr>
+                        <p class="git-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita et optio
+                            vel eum
+                            reiciendis suscipit consectetur fugit illo veniam doloremque. dita et optio vel eum
+                            reiciendis suscipit consectetur fugit illo veniam doloremque.</p>
+                    </div>
+                    <form id="git-search-form" autocomplete="off">
+                        <div class="git-search" id="git-search">
+                            <input type="text" id="git-input" placeholder="Enter username..." class="git-search-input"
+                                required />
+                            <button type="submit" id="git-submit">Search</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="user-main-data" id="user-main-data">
+                </div>
+            </section>
+
+            <!-- repo box -->
+            <section class="git-repos">
+                <div class="repo-table">
+                    <table class="git-table">
+                        <thead>
+                            <tr class="table-info">
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">URL</th>
+                                <th scope="col">Language</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-body">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- javascript files -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
